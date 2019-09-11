@@ -96,6 +96,16 @@ const get2dArray = (arr2D) => {
   return table
 }
 
+const rotateString = (word, i) => {
+  console.log(word)
+  if(i === word.length - 1) {
+    return word
+  }
+  let newWord = word.substring(word.length-1) + word.substring(0, word.length - 1)
+  i++
+  rotateString(newWord, i)
+}
+
 const main = () => {
   console.log('\n----------------\n')
   // Replace spaces with %20
@@ -154,8 +164,12 @@ const main = () => {
 
   console.log('\n----------------\n')
 
+  // String rotation
+  const word = 'Amazon'
+  console.log(`Rotating String '${word}'`)
+  rotateString(word, 0)
 
-
+  console.log('\n----------------\n')
 }
 
 main()
