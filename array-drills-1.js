@@ -2,9 +2,6 @@ const ArrayYay = require('./arrayyay');
 
 
 const main = () => {
-  // const myArray = new ArrayYay();
-  // console.log(myArray.length)  
-
   ArrayYay.SIZE_RATIO = 3;
 
   // Create an instance of the Array class

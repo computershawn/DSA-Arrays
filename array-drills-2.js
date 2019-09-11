@@ -1,5 +1,3 @@
-//const ArrayYay = require('./arrayyay');
-
 const urlify = (s) => {
   // Complexity is O(1)
   console.log(s.split(' ').join('%20'))
